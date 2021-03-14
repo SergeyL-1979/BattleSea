@@ -1,5 +1,5 @@
 from random import randint
-# from random import randrange
+
 
 
 class Dot:
@@ -302,31 +302,3 @@ class Game:
 
 g = Game()
 g.start()
-
-
-
-# s = Board()
-# b = Ship(Dot(3, 4), 4, 0)
-# m = Ship(Dot(5, 1), 2, 1)
-# v = Ship(Dot(1, 7), 3, 1)
-# f = Ship(Dot(3, 8), 3, 0)
-# s.add_ship(b)
-# s.add_ship(m)
-# s.add_ship(v)
-# s.add_ship(f)
-# s.begin()
-# print(s.show_field())
-# print(s.shot(Dot(3, 4)))
-# print(s.shot(Dot(4, 4)))
-# print(s.shot(Dot(5, 4)))
-# print(s.shot(Dot(6, 4)))
-#
-# print(s.shot(Dot(6, 8)))
-# print(s.shot(Dot(5, 1)))
-#
-# print(s.shot(Dot(7, 2)))
-# print(s.show_field())
-# print(s.count)
-
-
-# ships_rules = [4, 3, 3, 2, 2, 2, 1, 1, 1, 1]
