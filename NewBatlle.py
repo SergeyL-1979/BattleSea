@@ -192,7 +192,7 @@ class Player:
 
 class AI(Player):
     def ask(self):
-        d = Dot(randint(0, 5), randint(0, 5))
+        d = Dot(randint(0, 9), randint(0, 9))
         print(f"Ход компьютера: {d.x + 1} {d.y + 1}")
         return d
 
@@ -284,12 +284,12 @@ class Game:
             if repeat:
                 num -= 1
 
-            if self.ai.board.count == 7:
+            if self.ai.board.count == 10:
                 print("-" * 20)
                 print("Пользователь выиграл!")
                 break
 
-            if self.us.board.count == 7:
+            if self.us.board.count == 10:
                 print("-" * 20)
                 print("Компьютер выиграл!")
                 break
