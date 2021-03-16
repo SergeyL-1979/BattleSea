@@ -40,17 +40,17 @@ class Color:
     red = '\033[1;93m'
     counter1 = '\033[0;37m'
 
+    @staticmethod
+    def set_color(text, color):
+        return color + text + Color.reset
 
-def set_color(text, color):
-    return color + text + Color.reset
 
-
-class Cell(object):
-    empty_cell = set_color('O', Color.yellow2)  # пустой корабль
-    ship_cell = set_color('■', Color.blue)  # корабль
-    damaged_ship = set_color('X', Color.red)  # уничтожен
-    counter_cell = set_color('•', Color.counter1)  # промах
-    miss_cell = set_color('•', Color.yellow)  # промах
+class Cell():
+    empty_cell = Color.set_color('O', Color.yellow2)  # пустой корабль
+    ship_cell = Color.set_color('■', Color.blue)  # корабль
+    damaged_ship = Color.set_color('X', Color.red)  # уничтожен
+    counter_cell = Color.set_color('•', Color.counter1)  # промах
+    miss_cell = Color.set_color('•', Color.yellow)  # контур
 
 
 class Ship:
