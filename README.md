@@ -8,3 +8,8 @@ Skillfactory_FPW-100-47-_C2.8_BattleSea_Sergey_L
 ```python
 python NewBattle.py
 ```
+
+Добавил файл, где можно использовать в игре букву с цифрой, например A3
+```python
+python
+```
