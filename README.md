@@ -11,5 +11,5 @@ python NewBattle.py
 
 Добавил файл, где можно использовать в игре букву с цифрой, например A3
 ```python
-python
+python work_battle.py
 ```
